@@ -1,0 +1,18 @@
+# Python basics
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.venv/
+venv/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# Data (Never commit large datasets)
+data/
+!data/**/*.gitkeep
+
+# IDE settings
+.vscode/
+.idea/
