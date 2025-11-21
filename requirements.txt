@@ -4,3 +4,7 @@ matplotlib
 seaborn
 scikit-learn
 wordcloud
+
+# New libraries for Task 2
+TA-Lib
+openpyxl
