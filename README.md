@@ -16,19 +16,32 @@ The core hypothesis is that **market momentum can be explained by the emotional 
 
 ## 📁 Repository Structure and Organization
 
-The repository adheres to the suggested professional data science structure, fulfilling the **Interim Repository Organization (KPI ii)** metric.
+The repository strictly adheres to the mandated professional data science structure, fulfilling the **Interim Repository Organization (KPI ii)** metric.
 
+```text
 Nova_Financial_Analysis/
-├── .github/                      # CI/CD workflows (unittests.yml)
-├── data/                         # Raw and processed datasets
-│   ├── raw/
-│   │   └── stock_prices/         # 6 stock price files (.xlsx)
-├── notebooks/                    # Analysis notebooks
-│   ├── 01_eda_analysis.ipynb     # (Task 1) News Data Analysis
-│   └── 02_quantitative_analysis.ipynb # (Task 2) Financial Data Analysis
-├── requirements.txt              # Project dependencies
-├── src/                          # Future source code/functions
-└── tests/                        # Unit tests
+├── .vscode/
+│   └── settings.json
+├── .github/
+│   └── workflows/
+│       └── unittests.yml   # CI/CD Workflow (Must be named correctly)
+├── data/
+│   └── raw/
+│       └── stock_prices/   # Raw stock price data
+├── notebooks/
+│   ├── __init__.py         # Package Marker (Note: Must be __init__.py in file system)
+│   ├── 01_eda_analysis.ipynb
+│   └── README.md           # Documentation
+├── scripts/
+│   ├── __init__.py         # Package Marker (Note: Must be __init__.py in file system)
+│   └── README.md           # Documentation
+├── src/
+│   └── __init__.py         # Package Marker (Future source code/functions. Note: Must be __init__.py in file system)
+├── tests/
+│   └── __init__.py         # Package Marker (Note: Must be __init__.py in file system)
+├── .gitignore
+├── requirements.txt
+└── README.md
 
 ---
 
@@ -83,9 +96,12 @@ This section summarizes the functionality achieved, demonstrating **Interim Func
 
 ## 💻 Version Control & Branching
 
-The project follows a standard Git workflow, demonstrating **Interim Use of Version Control (KPI v)**:
+The project adheres to a strict Gitflow model, demonstrating **Interim Use of Version Control (KPI)** through robust branching, merging, and cleanup practices:
 
-* **`main`:** Stable, production-ready code base.
-* **`Task-1`:** Branch used for initial EDA and Text Analysis (Merged into `main`).
-* **`Task-2`:** Branch used for Quantitative Analysis and indicator calculation (Merged into `main`).
-* Commits are frequent and descriptive (e.g., `feat: complete quantitative analysis...`).
+* **Branching Strategy:** Feature development was conducted exclusively on dedicated feature branches (`Task-1`, `Task-2`).
+* **`main` Branch:** Represents the **stable, production-ready** code base. All new features reach `main` only via a Pull Request.
+* **Pull Requests (PRs):** All feature branches (`Task-1`, `Task-2`) were merged into `main` using a **Pull Request (PR)**, ensuring code review and a clean merge history.
+* **Commit Messages:** Commits are frequent and descriptive, following conventional commit practices (e.g., `feat: implement RSI calculation`, `fix: resolve seaborn FutureWarnings`).
+* **Branch Cleanup:** Both `Task-1` and `Task-2` branches were **deleted** from both the local and remote repositories after successfully merging into `main`, maintaining a clean branch history.
+
+---
