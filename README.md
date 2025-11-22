@@ -47,16 +47,18 @@ Nova_Financial_Analysis/
 -----
 
 🛠️ Setup and Environment
-
 To replicate the analysis, follow these steps:
 
-Clone the Repository:
+1. Clone the Repository:
+
+Bash
 
 git clone [YOUR_REPO_URL]
 cd Nova_Financial_Analysis
 
+2. Create and Activate Virtual Environment: (Demonstrating Dev Environment Setup KPI)
 
-Create and Activate Virtual Environment: (Demonstrating Dev Environment Setup KPI)
+Bash
 
 python -m venv .venv
 # Windows:
@@ -64,13 +66,15 @@ python -m venv .venv
 # Linux/macOS:
 source .venv/bin/activate
 
+3. Install Dependencies: (Referencing the clean requirements.txt)
 
-Install Dependencies: (Referencing the clean requirements.txt)
+Bash
 
 pip install -r requirements.txt
 
+4. Data Placement: Place the six stock price files (e.g., AAPL.xlsx) into the data/raw/stock_prices/ folder.
 
-Data Placement: Place the six stock price files (e.g., AAPL.xlsx) into the data/raw/stock_prices/ folder.
+-----
 
 ## 📈 Task Progress & Key Insights
 
