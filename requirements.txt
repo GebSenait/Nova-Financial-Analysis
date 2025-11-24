@@ -8,3 +8,8 @@ wordcloud
 # New libraries for Task 2
 TA-Lib
 openpyxl
+
+#New libraries for Task 3: Sentiment and Modeling
+
+nltk>=3.8.1
+xgboost>=1.7.5
