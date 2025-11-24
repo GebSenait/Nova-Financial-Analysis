@@ -1,15 +1,16 @@
-pandas
-numpy
-matplotlib
-seaborn
-scikit-learn
-wordcloud
+pandas>=1.5.0
+numpy>=1.23.0
+matplotlib>=3.6.0
+seaborn>=0.12.0
+scikit-learn>=1.2.0
+wordcloud>=1.9.0
 
 # New libraries for Task 2
-TA-Lib
-openpyxl
+TA-Lib>=0.4.24
+openpyxl>=3.0.0
 
-#New libraries for Task 3: Sentiment and Modeling
-
+# New libraries for Task 3: Sentiment and Modeling
 nltk>=3.8.1
-xgboost>=1.7.5
+textblob>=0.17.1
+vaderSentiment>=3.3.2
+scipy>=1.10.0
